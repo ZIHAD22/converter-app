@@ -1,7 +1,9 @@
 body{
     font-family: 'Space Mono', monospace;
 }
-
+main{
+    min-height: calc(113vh - 320px - 24px);
+}
 @media screen  and (max-width: 480px) {
     #main{
         width: 100% !important;
