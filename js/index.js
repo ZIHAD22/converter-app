@@ -32,6 +32,16 @@ const decimalToBinary = (from, to, number) => {
       base: 10,
     }
     return numberObj
+  } else if (from === 'Binary' && to === 'Hexadecimal') {
+    console.log(to)
+    const convertingNumber = parseInt(number, 2)
+      .toString(16)
+      .toLocaleUpperCase()
+    const numberObj = {
+      convertingNumber,
+      base: 16,
+    }
+    return numberObj
   }
 }
 
