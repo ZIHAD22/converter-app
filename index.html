@@ -88,33 +88,28 @@
                 aria-label="Enter a Number"
                 aria-describedby="basic-addon1"
               />
-              <span class="input-group-text px-4" id="basic-addon1">2</span>
+              <span class="input-group-text px-4" id="basic-addon1"
+                >Number</span
+              >
             </div>
           </div>
         </div>
         <!-- button section -->
         <div class="row g-3">
-          <div class="col-md-4 col-4 text-start">
+          <div class="col-md-6 col-6 text-start">
             <button onclick="convertNumber()" class="btn btn-success px-2">
               <i class="fas fa-equals"></i> Convert
             </button>
           </div>
-          <div class="col-md-4 col-4 text-center">
-            <button class="btn btn-danger">
+          <div class="col-md-6 col-6 text-end">
+            <button onclick="resetAllNumber()" class="btn btn-danger">
               <i class="fas fa-times pe-2"></i>Reset
-            </button>
-          </div>
-          <div class="col-md-4 col-4 text-end">
-            <button class="btn btn-warning">
-              <i class="fas fa-sync"></i> Swap
             </button>
           </div>
         </div>
         <!-- result area -->
         <div id="hidden-div" class="row mt-4 d-none">
-          <div id="result" class="col-md-12">
-            <!-- <div class="input-group mb-3"></div> -->
-          </div>
+          <div id="result" class="col-md-12"></div>
         </div>
       </div>
     </main>
