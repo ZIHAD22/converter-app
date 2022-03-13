@@ -64,7 +64,11 @@
           </div>
           <div class="col-md-6">
             <strong><label for="">To</label></strong>
-            <select class="form-select" aria-label="Default select example">
+            <select
+              id="convertTo"
+              class="form-select"
+              aria-label="Default select example"
+            >
               <option selected>Open this select menu</option>
               <option value="Binary">Binary</option>
               <option value="Decimal">Decimal</option>
@@ -77,6 +81,7 @@
           <div class="col-md-12">
             <div class="input-group mb-3">
               <input
+                id="inputNumber"
                 type="text"
                 class="form-control"
                 placeholder="Enter a Number"
@@ -90,7 +95,7 @@
         <!-- button section -->
         <div class="row g-3">
           <div class="col-md-4 col-4 text-start">
-            <button class="btn btn-success px-2">
+            <button onclick="convertNumber()" class="btn btn-success px-2">
               <i class="fas fa-equals"></i> Convert
             </button>
           </div>
@@ -106,21 +111,9 @@
           </div>
         </div>
         <!-- result area -->
-        <div class="row mt-4 d-none">
-          <div class="col-md-12">
-            <div class="input-group mb-3">
-              <textarea
-                class="form-control"
-                name=""
-                id=""
-                cols="10"
-                placeholder="Result Here"
-                rows="5"
-                aria-describedby="basic-addon1"
-              ></textarea>
-
-              <span class="input-group-text px-4" id="basic-addon1">2</span>
-            </div>
+        <div id="hidden-div" class="row mt-4 d-none">
+          <div id="result" class="col-md-12">
+            <!-- <div class="input-group mb-3"></div> -->
           </div>
         </div>
       </div>
